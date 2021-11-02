@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-02T14:37:43.873Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="Z5VqK786KyOrecQHG7CQ" version="15.6.5" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-11-02T14:39:22.634Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="KGBKD6s9muNsbdC7XrpW" version="15.6.5" type="github" pages="4">
   <diagram id="BUBOUDF4VAlEirSiF2Pi" name="Version_1">
     <mxGraphModel dx="1422" dy="1854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1596,7 +1596,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Gfc6-Qo9N4B7lzxN_LHm" name="Version_4">
-    <mxGraphModel dx="2844" dy="1508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2844" dy="1394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="OzIKKWO5WAZa1-RwUb7U-0" />
         <mxCell id="OzIKKWO5WAZa1-RwUb7U-1" parent="OzIKKWO5WAZa1-RwUb7U-0" />
@@ -1820,15 +1820,6 @@
         </mxCell>
         <mxCell id="MylzjCap7QO7rac_WqfX-111" value="Item 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MylzjCap7QO7rac_WqfX-108">
           <mxGeometry y="86" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="MylzjCap7QO7rac_WqfX-134" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="OzIKKWO5WAZa1-RwUb7U-1">
-          <mxGeometry x="70" y="1730" width="590" height="460" as="geometry" />
-        </mxCell>
-        <mxCell id="MylzjCap7QO7rac_WqfX-135" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Assumptions&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OzIKKWO5WAZa1-RwUb7U-1">
-          <mxGeometry x="70" y="1730" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="MylzjCap7QO7rac_WqfX-136" value="Mainland is also considered as an island" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="OzIKKWO5WAZa1-RwUb7U-1">
-          <mxGeometry x="70" y="1765" width="590" height="30" as="geometry" />
         </mxCell>
         <mxCell id="NfnBESN8ASxrUCVxWHhK-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;fontColor=default;endArrow=none;endFill=0;strokeColor=default;" edge="1" parent="OzIKKWO5WAZa1-RwUb7U-1" source="NfnBESN8ASxrUCVxWHhK-8" target="MylzjCap7QO7rac_WqfX-83">
           <mxGeometry relative="1" as="geometry" />

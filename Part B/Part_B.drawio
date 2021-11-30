@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-29T10:13:56.164Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="2zeOizXryakYX-N7Y2zu" version="15.8.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-30T04:41:16.284Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="CjWUx4LLm_g1gTRSwntv" version="15.8.6" type="github" pages="2">
   <diagram id="CcqqBkSiG1YW21hV8FYK" name="Version 1">
-    <mxGraphModel dx="2370" dy="1257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -101,13 +101,19 @@
           <mxGeometry y="236" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wH3_ArUirfap4TTfS6L5-33" value="Instudio_Equipment" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="840" y="563" width="160" height="56" as="geometry" />
+          <mxGeometry x="840" y="563" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="nbJVjTYj6Yu_1hs8ueYN-1" value="equipCode {PK} {FK}" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" vertex="1" parent="wH3_ArUirfap4TTfS6L5-33">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wH3_ArUirfap4TTfS6L5-34" value="instudioLocation" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="wH3_ArUirfap4TTfS6L5-33" vertex="1">
-          <mxGeometry y="26" width="160" height="30" as="geometry" />
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wH3_ArUirfap4TTfS6L5-37" value="Portable_Equipment" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1128" y="563" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="nbJVjTYj6Yu_1hs8ueYN-3" value="equipCode {PK} {FK}" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" vertex="1" parent="wH3_ArUirfap4TTfS6L5-37">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wH3_ArUirfap4TTfS6L5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="wH3_ArUirfap4TTfS6L5-56" target="wH3_ArUirfap4TTfS6L5-33" edge="1">
           <mxGeometry relative="1" as="geometry" />

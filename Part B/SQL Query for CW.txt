@@ -1,0 +1,72 @@
+SELECT s.w1810872_studioName, s.w1810872_studioAddress, e.w1810872_equipMake, e.w1810872_equipSeries, e.w1810872_equipModel, e.w1810872_costPerDay
+FROM w1810872_Studio S JOIN w1810872_Equipment E
+ON s.w1810872_studioId   = e.w1810872_studioId  
+AND (e.w1810872_costPerDay >= 125.00 AND w1810872_studioAddress LIKE '%London%');
+
+
+---------------------------------------------------CREATE TABLES----------------------------------------------
+CREATE TABLE w1810872_Studio
+(
+w1810872_studioId INTEGER,
+w1810872_studioName VARCHAR(100) NOT NULL,
+w1810872_studioAddress VARCHAR(100) NOT NULL,
+w1810872_studioPCode VARCHAR(32),
+w1810872_studioTelNo VARCHAR(20),
+constraint s_sid_pk PRIMARY KEY (w1810872_studioId)
+);
+
+
+CREATE TABLE w1810872_Equipment
+(
+w1810872_equipCode INTEGER,
+w1810872_equipMake VARCHAR(100) NOT NULL,
+w1810872_equipSeries VARCHAR(100) NOT NULL,
+w1810872_equipModel VARCHAR(100) NOT NULL,
+w1810872_equipCondition VARCHAR(100) NOT NULL, 
+w1810872_equipStatus VARCHAR(100) NOT NULL,
+w1810872_lastServicingDate DATE, 
+w1810872_costPerDay DECIMAL(10,2),
+w1810872_studioId INTEGER,
+constraint e_ecode_pk PRIMARY KEY (w1810872_equipCode),
+constraint e_sid_fk FOREIGN KEY (w1810872_studioId) references w1810872_Studio(w1810872_studioId)
+);
+
+
+
+
+
+--------------------------------------------------INSERT INTO------------------------------------------------
+INSERT INTO 
+w1810872_Studio (w1810872_studioId, w1810872_studioName, w1810872_studioAddress, w1810872_studioPCode, w1810872_studioTelNo)
+VALUES
+(001, 'Pro Studio', '67 Worthy Lane Bristol', '2021-03-21'),
+(002, 'Uptown Music', '67 Worthy Lane London', '2021-01-06'),
+(003, 'Costal Studio', '93 Bishopthorpe Road Pendeen', '2021-04-25'),
+(004, 'Creative Sounds', '82 Pendwyallt Road Burton Hastings', '2021-02-12'),
+(005, 'Music Mania', '65 Seaford Road Culligran', NULL),
+(006, 'Recordedly', '18 Haslemere Road Easthorpe', NULL),
+(007, 'SoundHub', '22 Newport Road London', NULL),
+(008, 'Joel Studio', '98 Fraserburgh Rd Lincoln', NULL),
+(009, 'ChordVibes', '43 Chapel Lane Arlington', NULL),
+(010, 'Musically', '71 Scarcroft Road Porthyrhyd', NULL);
+
+
+
+INSERT INTO 
+w1810872_Equipment (w1810872_equipCode, w1810872_equipMake, w1810872_equipSeries, w1810872_equipModel, w1810872_equipCondition, w1810872_equipStatus, w1810872_lastServicingDate, w1810872_costPerDay, w1810872_studioId)
+VALUES
+(301, 'LabTech', 'Aneasei', 'LAC 5050S', 'new', 'available', NULL, 125.07, 102),
+(302, 'DENVER', 'Flansei', 'TB 215DDE', 'used', 'booked', '2021-10-28', 16.02, 101),
+(303, 'Eyela', 'Ufing', 'iCE 3500', 'used', 'available', '2021-09-10', 140.32, 102),
+(304, 'Eutech', 'Astriori', '1300 Series', 'used', 'booked', '2021-11-12', 26.22, 104),
+(305, 'Millipore', 'Aneasei', 'LBI 250M', 'used', 'hired', '2021-11-19', 136.28, 102),
+(306, 'Carl Zeiss', 'Yer', 'ULT-1340-5-V', 'used', 'booked', '2021-10-10', 28.30, 103),
+(307, 'Atago', 'Kak', 'Excella E24', 'new', 'booked', NULL, 185.65, 107),
+(308, 'DENVER', 'Xask Flute', 'NDO 700W', 'used', 'available', '2021-11-01', 115.33, 110),
+(309, 'LabTech', 'Hucsi Pipe', '7890A', 'new', 'available', NULL, 16.25, 108),
+(310, 'Carl Zeiss', 'Strewaichio', ' AI-022', 'new', 'booked', NULL, 10.62, 108),
+(311, 'Eyela', 'Teipeolp', 'LEF-103S', 'new', 'available', '2021-11-20', 36.99, 109),
+(312, 'Millipore', 'Xask Flute', 'pH700', 'used', 'hired', '2021-11-23', 104.23, 102),
+(313, 'LabTech', 'Treilf', 'CON700', 'used', 'hired', '2021-10-30', 124.44, 110),
+(314, 'Atago', 'Eclung', 'SCS 6-AS', 'used', 'hired', '2021-11-01', 100.95, 104),
+(315, 'Atago', 'Stictiess', 'DR-A1', 'new', 'available', NULL, 126.55, 107);
